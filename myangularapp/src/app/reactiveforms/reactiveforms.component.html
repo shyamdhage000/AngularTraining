@@ -1,0 +1,23 @@
+<form [formGroup]="loginForm">
+    <div>
+        <label>Name:</label>
+        <input 
+        type="text"
+        formControlName="uname"/> 
+        <div *ngIf="aForm.uname.invalid && aForm.uname.touched">
+            Username is required
+        </div>
+    </div>
+    <div>
+        <label>Password:</label>
+        <input 
+        type="text"
+        formControlName="pword"/> 
+        <div *ngIf="aForm.pword.invalid && aForm.pword.touched">
+            password is required
+        </div>
+    </div>
+   
+   <button type="submit">Login</button>
+</form>
+[disabled]="!loginForm.valid"

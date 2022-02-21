@@ -1,0 +1,29 @@
+<div *ngIf='flag'>
+    {{message}}
+</div>
+
+
+<div *ngIf='flag, else elseBlock'>
+    {{message}}
+</div>
+<ng-template  #elseBlock>
+    <h2>No text to display</h2>
+</ng-template>
+
+<div>
+    Month:
+    <select>
+        <option *ngFor='let month of months'>{{month}}</option>
+    </select>
+</div>
+
+
+<div *ngFor='let num of number'>
+    <div ngSwitch='{{num %2 }}'>
+        <div *ngSwitchCase="'0'">{{num }} is Even</div>
+        <div *ngSwitchCase="'1'">{{num }} is Odd</div>
+        <div *ngSwitchDefault>Default Case</div>
+
+    </div>
+
+</div>

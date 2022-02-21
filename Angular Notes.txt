@@ -1,0 +1,24 @@
+Cmd to create new project- ng new app_name
+Cmd to create component- ng g c comp_name
+Cmd to create pipes- ng g p pipe_name
+Cmd to create service- ng g s service_name
+cmd to create directives-  ng g d directive_name
+
+
+Points Covered in Angular-
+Data Binding-
+	1 Way Data Binding-ne-way data binding is a one-way interaction between component and its template.
+		-String interpolation= 	{{ }} 
+		-Event binding= 	() or on-. E.g-<button (click)="showData($event)">Click here</button>
+		-Property binding=	 [].
+		-Attribute binding=	<td [attr.colspan]="columnSpan"> ... </td>
+		-Class binding=		<p [class]="myClasses">
+		-Style binding=		<p [style.color]="myParaColor"> ... </p>
+
+Two-way data binding-
+			Two-way data binding is a two-way interaction, data flows in both ways (from component to views and views to component). 
+			-NgModel : NgModel is a standalone directive. ngModel directive binds form control to property and property to form control.
+			 The syntax of ngModel is as follows − <HTML [(ngModel)]="model.name" />
+			FormModule do the necessary setup to enable two-way data binding.
+
+
